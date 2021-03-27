@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neumorphism Pagination Using HTML/CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body{
+      margin: 0px;
+      padding: 0px;
+      background: #f2f2f2;
+      font-family: 'Montserrat', sans-serif;
+      }
+      section{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      }
+      ul{
+      list-style-type: none;
+      padding: 0px;
+      display: flex;
+      }
+      li{
+      padding: 5px 15px;
+      box-shadow: 2px 2px 4px #b8b9be, inset 0px 0px 4px #fff;
+      margin-right: 10px;
+      cursor: pointer;
+      }
+      li:hover{
+      box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+      }
+      .pagination{
+      border-color: #ced4da !important;
+      background: #ecf0f3;
+      color: #8395a7 !important;
+      box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+      padding: 0 10px;
+      border-radius: 8px;
+      }
+      @media(max-width: 685px){
+      li{
+      padding: 5px 10px;
+      margin-right: 10px;
+      }
+      }
+      @media(max-width: 400px){
+      li{
+      font-size: 8px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="pagination">
+        <ul>
+          <li>Previous</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>Next</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
